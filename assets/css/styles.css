@@ -1,5 +1,28 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato&family=Monda&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Oswald:wght@300&display=swap');
 
 body {
-    font-family: Lato, sans-serif;
+    font-family: Lato;
+    color: #777777;
+}
+
+h1 {
+  font-family: Oswald;
+  text-transform: uppercase;
+  color: #555555;
+}
+
+#logo {
+  float: left;
+  font-size: 180%;
+}
+
+#menu {
+  font-size: 80%;
+  list-style-type: none;
+  text-align: right;
+}
+
+#menu li {
+  display: inline;
+  margin-right: 30px;
 }

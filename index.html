@@ -1,43 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Clone of Twitter</title>
-    <link rel="stylesheet" href="assets/css/styles.css" type="text/css" />
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Clone of Twitter</title>
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+	<!-- Custom CSS -->
+	<link rel="stylesheet" href="assets/css/styles.css" type="text/css" />
 </head>
+
 <body>
-    
-    <header>
-        <a href="index.html">
-            <h1 id="logo">Twitter</h1>
-        </a>
-        <nav>
-            <ul id="menu">
-                <li>
-                    <a href="index.html">Home</a> 
-                </li>
-                <li>
-                    <a href="#">Tweet</a>
-                </li>
-                <li>
-                    <a href="#">Notification</a>
-                </li>
-                <li>
-                    <a href="#">Sign Up</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
-    
-    <section>
-        hero image and text
+
+	<header>
+		<a href="index.html">
+			<i class="fab fa-twitter logo"></i>
+		</a>
+		<nav>
+			<ul id="menu">
+				<li>
+					<a href="index.html">Home</a>
+				</li>
+				<li>
+					<a href="#">Tweet</a>
+				</li>
+				<li>
+					<a href="#">Notification</a>
+				</li>
+				<li>
+					<a href="#">Sign Up</a>
+				</li>
+			</ul>
+		</nav>
+	</header>
+
+	<section class="main">
+        <div class="sidebar">
+            <h3>Sidebar</h3>
+        </div>
+
+        <div class="feed">
+            <div class="feed-header">
+                <h3>Home</h3>
+            </div>
+            <div class="tweetbox">
+                <form>
+                    <div class="tweetbox-input">
+                        <img class="user-image" src="assets/img/party.png" alt="" />
+                        <input placeholder="What's happening?" type="text"/>
+                    </div>
+                    <input class="tweetbox-image-input" placeholder="Enter image URL" type="text"/>
+                    <Button class="tweetbox-tweet-button">Tweet</Button>
+                </form>
+            </div>
+        </div>
+
+        <div class="widgets">
+            <h3>Widgets</h3>
+        </div>
     </section>
-    
-    <footer>
-        social Media links
-    </footer>
-    
+
+	<footer>
+		social Media links
+	</footer>
+
 </body>
+
 </html>

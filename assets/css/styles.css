@@ -9,6 +9,8 @@
 body {
     font-family: Lato;
     color: #777777;
+    --twitter-color: #50b7f5; 
+    --twitter-background: #e6ecf0;
 }
 
 h1 {
@@ -17,17 +19,19 @@ h1 {
   color: #555555;
 }
 
-#logo {
-  float: left;
-  font-size: 180%;
-  margin-left: 18px;
+.logo {
+    float: left;
+    color: var(--twitter-color);
+    font-size: 250%;
+    margin-top: 18px;
+    margin-left: 18px;
 }
 
 #menu {
-  font-size: 110%;
-  list-style-type: none;
-  text-align: right;
-  background-color: rgba(0, 0, 0, 0.1)
+    font-size: 110%;
+    list-style-type: none;
+    text-align: right;
+    background-color: rgba(0, 0, 0, 0.1)
 
 }
 
@@ -36,17 +40,95 @@ h1 {
 }
 
 #menu li {
-  display: inline;
-  margin-right: 30px;
+    display: inline;
+    margin-right: 30px;
 }
 
 #menu a {
-  text-decoration: none;
-  color: inherit;
+    text-decoration: none;
+    color: inherit;
 }
 
-.page-content {
-    height: 100%;
-    width: 100%;
-    background-color: red;
+.main {
+    display: flex;
+    height: 100vh;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 10px;
 }
+
+.sidebar {
+    flex: 0.3;
+    border-right: 1px solid var(--twitter-background);
+    margin-top: 18px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.feed {
+    flex: 0.4;
+    border-right: 1px solid var(--twitter-background);
+}
+
+.feed-header {
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 100;
+    border: 1px solid var(--twitter-background);
+    padding: 15px 20px;
+}
+
+.tweetbox {
+    padding-bottom: 10px;
+    border-bottom: 8px solid var(--twitter-background);
+    padding-right: 10px;
+}
+
+.user-image {
+    height: 50px;
+    width: 50px;
+}
+
+.tweetbox > form {
+    display: flex;
+    flex-direction: column;
+}
+
+.tweetbox-input {
+    padding: 20px;
+    display: flex;
+}
+
+.tweetbox-input > input {
+    flex: 1;
+    margin-left: 20px;
+    font-size: 20px;
+    border: none;
+}
+
+.tweetbox-image-input {
+    border: none;
+    padding: 10px;
+}
+
+.tweetbox-tweet-button {
+    background-color: var(--twitter-color) !important;
+    border: none !important;
+    color: white !important;
+    font-weight: 900 !important;
+    text-transform: inherit !important;
+    border-radius: 30px !important;
+    height: 40px !important;
+    width: 80px;
+    margin-top: 20px !important;
+    margin-left: auto !important;
+}
+
+.widgets {
+    flex: 0.3;
+    margin-top: 18px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
